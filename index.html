@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body>
+	<!-- 图标 -->
+	<img id="logo" class="logo" src="./img/logo.jpg">
+	<!-- 窗口 -->
+	<div id="wrap" class="wrap">
+		<!-- 窗口顶部 -->
+		<div id="head" class="head">
+			<span>Wunderlist</span>
+			<!-- 窗口开关按钮 -->
+			<div class="switch">
+				<div class="s small">
+					<i class="iconfont">&#xe616;</i>
+				</div>
+				<div class="s large">
+					<i class="iconfont">&#xe60b;</i>
+				</div>
+				<div class="s down">
+					<i class="iconfont">&#xe617;</i>
+				</div>
+			</div>
+		</div>
+		<!-- 窗口主体部分 -->
+		<div class="main">
+			<!-- 窗口左边 -->
+			<div class="left">
+				<!-- 搜索工具栏 -->
+				<div class="search-toolbar">
+					<a class="list-toggle" href="javascript:;">
+						<!-- <div>
+							<span></span>
+							<span></span>
+							<span></span>
+						</div> -->
+						<i class="iconfont">&#xe60c;</i>
+					</a>
+					<input class="inp-text" type="" name="">
+					<a class="search" href="javascript:;">
+						<i class="iconfont">&#xe610;</i>
+					</a>
+				</div>
+				<!-- 用户信息 -->
+				<div class="user-toolbar">
+					<div class="user">
+						<a href="javascript:;" >
+							<img src="img/1.png" class="head-portrait">
+							<span class="uname">duoniya</span>
+							<img class="user-arrow" src="img/user_arrow.png">
+						</a>
+					</div>
+					<div class="count">
+						<a class="activities-count" href="javascript:;">
+							<i class="iconfont">&#xe607;</i>
+						</a>
+						<a href="javascript:;" class="conversations-count">
+							<i class="iconfont">&#xe60a;</i>
+						</a>
+					</div>
+				</div>
+				<!-- 任务一部分 -->
+				<div class="task">
+					<!-- 自定义滚动条 -->
+					<!-- <div class="scroll-box">
+						<div class="scroll"></div>
+					</div> -->
+					<ul class="filters-collection">
+						<li>
+							<a href="javascript:;" class="inbox">
+								<i class="iconfont">&#xe608;</i>
+								<span class="task-title">收件箱</span>
+								<span class="task-num">1</span>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;" class="addStar">
+								<i class="iconfont">&#xe606;</i>
+								<span class="task-title">已加星标</span>
+								<span class="task-num">1</span>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;" class="today">
+								<i class="iconfont">&#xe611;</i>
+								<span class="task-title">今天</span>
+								<span class="task-num">1</span>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;" class="week">
+								<i class="iconfont">&#xe612;</i>
+								<span class="task-title">周</span>
+								<span class="task-num">1</span>
+							</a>
+						</li>
+					</ul>
+					<ul class="lists-collection" id="lists-collection">
+						<!-- <li>
+							<a href="javascript:;">
+								<i class="iconfont">&#xe609;</i>
+								<span class="task-title">杂货购物</span>
+								<span class="task-num1">1</span>
+								<span class="task-num1">2</span>
+								<a class="pen" href="javascript:;">
+									<i class="iconfont">&#xe61f;</i>
+								</a>
+							</a>
+						</li> -->
+						<!-- <li>
+							<a href="javascript:;">
+								<i class="iconfont">&#xe609;</i>
+								<span class="task-title">新清单</span>
+								<span class="task-num"></span>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<i class="iconfont">&#xe609;</i>
+								<span class="task-title">想看的电影</span>
+								<span class="task-num"></span>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<i class="iconfont">&#xe609;</i>
+								<span class="task-title">旅游</span>
+								<span class="task-num"></span>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<i class="iconfont">&#xe609;</i>
+								<span class="task-title">工作</span>
+								<span class="task-num"></span>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<i class="iconfont">&#xe609;</i>
+								<span class="task-title">家庭</span>
+								<span class="task-num"></span>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<i class="iconfont">&#xe609;</i>
+								<span class="task-title">私人</span>
+								<span class="task-num"></span>
+							</a>
+						</li>
+
+						<li>
+							<a href="javascript:;">
+								<i class="iconfont"> b+=</i>
+								<span class="task-title">杂货购物</span>
+								<span class="task-num"></span>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<i class="iconfont">&#xe609;</i>
+								<span class="task-title">新清单</span>
+								<span class="task-num"></span>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<i class="iconfont">&#xe609;</i>
+								<span class="task-title">想看的电影</span>
+								<span class="task-num"></span>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<i class="iconfont">&#xe609;</i>
+								<span class="task-title">旅游</span>
+								<span class="task-num"></span>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<i class="iconfont">&#xe609;</i>
+								<span class="task-title">工作</span>
+								<span class="task-num"></span>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<i class="iconfont">&#xe609;</i>
+								<span class="task-title">家庭</span>
+								<span class="task-num"></span>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<i class="iconfont">&#xe609;</i>
+								<span class="task-title">私人</span>
+								<span class="task-num"></span>
+							</a>
+						</li> -->
+					</ul>
+				</div>
+				<a href="javascript:;" class="task1">
+					<i class="iconfont">&#xe602;</i>
+				</a>
+				<div class="create">
+					<a class="createlist" href="javascript:;">
+						<span class="create-icon">
+							<i class="iconfont">&#xe603;</i>
+						</span>
+						<span class="title">创建清单</span>	
+					</a>
+				</div>
+			</div>
+			<!-- 右边 -->
+			<div class="right">
+				<div class="list-toolbar">
+					<h1 class="title"></h1>
+					<div class="actionBar-bottom">
+						<a href="javascript:;">
+							<i class="iconfont">&#xe614;</i>
+							<span class="tab-text">共享</span>
+						</a>
+						<a href="javascript:;">
+							<i class="iconfont">&#xe604;</i>
+							<span class="tab-text">排序</span>
+						</a>
+						<a href="javascript:;">
+							<i class="iconfont">&#xe613;</i>
+							<span class="tab-text">更多</span>
+						</a>
+					</div>
+				</div>
+				<div class="tasks-content">
+					<div class="addTask">
+						<a href="javascript:;">
+							<i class="iconfont">&#xe603;</i>
+						</a>
+						<input type="text" name="" value="添加任务...">
+						<div class="set">
+							<a href="javascript:;" class="set-date">
+								<i class="icon"></i>
+							</a>
+							<a href="javascript:;" class="set-star">
+								<i class="icon"></i>
+							</a>
+						</div>
+					</div>
+					<div class="task-body">
+						<ul class="task-list" id="task-list">
+							<!-- <li>
+								<a href="javascript:;" class="checkbox">
+									<i class="iconfont">&#xe60e;</i>
+								</a>
+								<div class="task-wraper">
+									<span>1111111111</span>
+								</div>
+								<div class="boxs">
+									<i class="icon iconfont">&#xe61d;</i>
+									<span class="time">2015.3.4</span>
+									<a href="javascript:;" class="star">
+										<i class="iconfont">&#xe61e;</i>
+									</a>	
+								</div>
+							</li>
+							<li>
+								<a href="javascript:;" class="checkbox">
+									<i class="iconfont">&#xe60e;</i>
+								</a>
+								<div class="task-wraper">
+									<span>1111111111</span>
+								</div>
+								<div class="boxs">
+									<i class="icon iconfont">&#xe61d;</i>
+									<span class="time">2015.3.4</span>
+									<a href="javascript:;" class="star">
+										<i class="iconfont">&#xe61e;</i>
+									</a>	
+								</div>
+							</li>
+							<li>
+								<a href="javascript:;" class="checkbox">
+									<i class="iconfont">&#xe60e;</i>
+								</a>
+								<div class="task-wraper">
+									<span>1111111111</span>
+								</div>
+								<div class="boxs">
+									<i class="icon iconfont">&#xe61d;</i>
+									<span class="time">2015.3.4</span>
+									<a href="javascript:;" class="star">
+										<i class="iconfont">&#xe61e;</i>
+									</a>	
+								</div>
+							</li>
+							<li>
+								<a href="javascript:;" class="checkbox">
+									<i class="iconfont">&#xe60e;</i>
+								</a>
+								<div class="task-wraper">
+									<span>1111111111</span>
+								</div>
+								<div class="boxs">
+									<i class="icon iconfont">&#xe61d;</i>
+									<span class="time">2015.3.4</span>
+									<a href="javascript:;" class="star">
+										<i class="iconfont">&#xe61e;</i>
+									</a>	
+								</div>
+							</li> -->
+						</ul>
+						<h2 class="completed-task">
+							<a class="comp-btn" href="javascript:;">已完成任务</a>
+						</h2>
+						<ul class="comp-tasks">
+							<!-- <li>
+								<a href="javascript:;" class="checkbox">
+									<i class="iconfont">&#xe60d;</i>
+								</a>
+								<div class="task-wraper">
+									<span>1111111111</span>
+								</div>
+								<div class="boxs">
+									<i class="icon iconfont">&#xe61d;</i>
+									<span class="time">2015.3.4</span>
+									<a href="javascript:;" class="star">
+										<i class="iconfont">&#xe606;</i>
+									</a>	
+								</div>
+							</li>
+							<li>
+								<a href="javascript:;" class="checkbox">
+									<i class="iconfont">&#xe60d;</i>
+								</a>
+								<div class="task-wraper">
+									<span>1111111111</span>
+								</div>
+								<div class="boxs">
+									<i class="icon iconfont">&#xe61d;</i>
+									<span class="time">2015.3.4</span>
+									<a href="javascript:;" class="star">
+										<i class="iconfont">&#xe606;</i>
+									</a>	
+								</div>
+							</li>
+							<li>
+								<a href="javascript:;" class="checkbox">
+									<i class="iconfont">&#xe60d;</i>
+								</a>
+								<div class="task-wraper">
+									<span>1111111111</span>
+								</div>
+								<div class="boxs">
+									<i class="icon iconfont">&#xe61d;</i>
+									<span class="time">2015.3.4</span>
+									<a href="javascript:;" class="star">
+										<i class="iconfont">&#xe606;</i>
+									</a>	
+								</div>
+							</li>
+							<li>
+								<a href="javascript:;" class="checkbox">
+									<i class="iconfont">&#xe60d;</i>
+								</a>
+								<div class="task-wraper">
+									<span>1111111111</span>
+								</div>
+								<div class="boxs">
+									<i class="icon iconfont">&#xe61d;</i>
+									<span class="time">2015.3.4</span>
+									<a href="javascript:;" class="star">
+										<i class="iconfont">&#xe606;</i>
+									</a>	
+								</div>
+							</li>
+							<li>
+								<a href="javascript:;" class="checkbox">
+									<i class="iconfont">&#xe60d;</i>
+								</a>
+								<div class="task-wraper">
+									<span>1111111111</span>
+								</div>
+								<div class="boxs">
+									<i class="icon iconfont">&#xe61d;</i>
+									<span class="time">2015.3.4</span>
+									<a href="javascript:;" class="star">
+										<i class="iconfont">&#xe606;</i>
+									</a>	
+								</div>
+							</li> -->
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+<script type="text/javascript" src="js/artTemplate.js"></script>
+<script type="text/javascript" src="js/model.js"></script>
+<!-- <script type="text/javascript" src="js/desktop.js"></script> -->
+<script type="text/javascript" src="js/drag.js"></script>
+<!-- <script type="text/javascript" src="js/changeWH.js"></script> -->
+<script type="text/javascript" src="js/controller.js"></script>
+</html>
